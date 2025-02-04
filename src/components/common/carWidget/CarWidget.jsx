@@ -1,10 +1,11 @@
 import { FaShoppingCart } from "react-icons/fa";
+import "./CarWidget.css"
 
 const CarWidget = () => {
     return (
     <div>
         <div>
-            <FaShoppingCart style={{padding: "20px", height: "70px", width: "70px"}}/>
+            <FaShoppingCart className="icon"/>
         </div>
     </div>
     );

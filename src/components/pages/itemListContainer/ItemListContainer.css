@@ -1,0 +1,27 @@
+.hero{
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: space-between; 
+    height: 250px; 
+    border-bottom: 3px double black;
+}
+
+.catalogo{
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    border: 2px solid black; 
+    height: 350px;
+}
+
+.catalogo .productos{
+    display: flex; 
+    flex-direction: row; 
+    align-items: center; 
+    justify-content: space-around; 
+    width: 100%; 
+    height: 300px; 
+    border-bottom: 2px solid black; 
+    border-top: 2px solid black;
+}

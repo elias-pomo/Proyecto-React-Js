@@ -1,4 +1,5 @@
 import { useState } from "react";
+import "./ButtonCounter.css";
 
 const ButtonCounter = ({stock}) => {
 const [Contador, setContador] = useState(0);
