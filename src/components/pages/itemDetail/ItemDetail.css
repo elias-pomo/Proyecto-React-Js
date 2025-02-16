@@ -1,0 +1,42 @@
+.imagen{
+    height: 200px;
+    width: 200px;
+}
+.imagen2{
+    height: 500px;
+    width: 500px;
+    
+}
+.Box{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-left: 30px;
+}
+.contenedorPadre{
+    border: 1px solid rgba(0, 0, 0, 0.103);
+    width: 90%;
+    
+}
+.contenedor3{
+    border: 1px solid rgb(0, 0, 0);
+}
+.contenedor2{
+    width: 50%;
+    
+}
+
+.info{
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 30px;
+}
+.info div p{
+    font-size: 20px;
+    text-align: justify;
+}
+.info div {
+    padding: 20px;
+}

@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./ButtonCounter.css";
+import { Button } from "@mui/material";
 
 const ButtonCounter = ({stock}) => {
 const [Contador, setContador] = useState(0);
@@ -14,10 +15,9 @@ const [Contador, setContador] = useState(0);
 
     return (
     <div>
-        <button onClick={sumador}>+</button>
+        <Button disabled={Contador === stock} variant="outlined" color="success" onClick={sumador}>COMPRAR</Button>
     </div>
     );
 };
 
 export default ButtonCounter;
-

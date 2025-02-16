@@ -1,9 +1,12 @@
+
 .hero{
+    background-image: url(https://res.cloudinary.com/djcguwdgr/image/upload/v1739057157/hero1_uhergq.jpg);
     display: flex; 
     flex-direction: column; 
     align-items: center; 
+    height: 250px;
+    background-size: cover;
     justify-content: space-between; 
-    height: 250px; 
     border-bottom: 3px double black;
 }
 
@@ -12,16 +15,17 @@
     flex-direction: column; 
     align-items: center; 
     border: 2px solid black; 
-    height: 350px;
+    height: 100%;
+    
+}
+.catalogo h2{
+    margin-top: 20px;
+    height: 50px;
 }
 
 .catalogo .productos{
-    display: flex; 
-    flex-direction: row; 
-    align-items: center; 
-    justify-content: space-around; 
-    width: 100%; 
-    height: 300px; 
-    border-bottom: 2px solid black; 
-    border-top: 2px solid black;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 16px;
+    justify-content: center;
 }

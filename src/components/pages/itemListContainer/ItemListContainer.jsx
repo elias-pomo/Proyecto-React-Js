@@ -1,24 +1,39 @@
+import { useState } from "react";
+import { products } from "../../../product";
 import ProductCard from "../../common/productCard/ProductCard";
+import { useEffect } from "react";
 import "./ItemListContainer.css";
 
-const ItemListContainer = ({ greeting }) => {
+const ItemListContainer = () => {
+    const [items, setItems] = useState([]);
+
+    useEffect(() =>{
+        setItems(products);
+    }, []);
     
     return (
-        <div>
+        <div className="main">
             <div className="hero">
-            <h1>{greeting}</h1>
-            <p>¡Encontrá aca tu estilo!</p>
             </div>
             <div className="catalogo">
-                <p>encontra aca todas los modelos que tenemos para vos!</p>
-                <h2>Catalogo</h2>
+                <h2>TODOS NUESTROS PRODUCTOS</h2>
                 <div className="productos">
-                        <ProductCard title={"adidas"} price={50} stock={15} />
-                        <ProductCard title={"nike"} price={45} stock={9} />
-                        <ProductCard title={"puma"} price={55} stock={10} />
-                        <ProductCard title={"Topper"} price={35} stock={6} />
-                        <ProductCard title={"Fila"} price={40} stock={8} />
-                        <ProductCard title={"Reebok"} price={45} stock={5} />
+                    {items.map((item) => (
+                        <ProductCard
+                            key={item.id}
+                            imageUrl={item.imageUrl}
+                            title={item.title}
+                            price={item.price}
+                            genero={item.Genero}
+                            stock={item.stock}
+                            id={item.id}
+                            descriptionTitle ={item.descriptionTitle}
+                            description={item.description}
+                            img1={item.img1}
+                            img2={item.img2}
+                            img3={item.img3}
+                        />
+                    ))}
                 </div>
             </div>
         </div>

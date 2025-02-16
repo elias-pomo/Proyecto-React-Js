@@ -3,7 +3,7 @@ import "./Footer.css";
 const Footer = () => {
   return (
     <div className="footer">
-        <h2>ECOVEX</h2>
+        <h2>ECCOVE</h2>
     </div>
   );
 };
