@@ -8,7 +8,7 @@ import IconBreadcrumbs from "../../common/Breadcrumbs/Breadcrumbs";
 import ButtonCounter from "../../common/ButtonCounter/ButtonCounter";
 
 
-export const ItemDetail = ({ agregarAlCarrito }) => {
+export const ItemDetail = () => {
   const { id } = useParams();
 
   // id de useParams
@@ -44,7 +44,7 @@ export const ItemDetail = ({ agregarAlCarrito }) => {
             </div>
             <div>
             <h2>${item.price}</h2>
-              <ButtonCounter onClick={() => agregarAlCarrito(products)} />
+              <ButtonCounter />
             </div>
           </div>
         </Grid>
