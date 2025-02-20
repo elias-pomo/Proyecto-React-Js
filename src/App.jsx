@@ -6,6 +6,7 @@ import Cart from "./components/pages/cart/Cart";
 import Checkout from "./components/pages/checkout/Checkout";
 import { BrowserRouter, Routes, Route } from "react-router";
 import Catalogo from "./components/pages/catalogo/Catalogo";
+import CartContextProvider from "./context/CartContext";
 
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
   return(
     <div>
     <BrowserRouter>
+    <CartContextProvider>
     <Navbar />
     <Routes> 
       <Route path="/*" element={<h1>404 page no found</h1>} />
@@ -21,10 +23,9 @@ function App() {
       <Route path="/Cart" element={<Cart />} />
       <Route path="/Catalogo" element={<Catalogo />} />
       <Route path="/checkout" element={<Checkout />} />
-
     </Routes>
-      
     <Footer />
+    </CartContextProvider>
     </BrowserRouter>
     </div>
   );

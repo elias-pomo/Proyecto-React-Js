@@ -1,42 +1,107 @@
-.imagen{
-    height: 200px;
-    width: 200px;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-.imagen2{
-    height: 500px;
-    width: 500px;
-    
+.imagen {
+  height: 200px;
+  width: 200px;
 }
-.Box{
-    display: flex;
-    justify-content: left;
-    align-items: center;
-    margin-left: 30px;
+.imagen2 {
+  height: 500px;
+  width: 500px;
 }
-.contenedorPadre{
-    border: 1px solid rgba(0, 0, 0, 0.103);
-    width: 90%;
-    
+.Box {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  margin-left: 30px;
 }
-.contenedor3{
-    border: 1px solid rgb(0, 0, 0);
+.contenedorPadre {
+  border: 1px solid rgba(0, 0, 0, 0.103);
+  width: 90%;
 }
-.contenedor2{
-    width: 50%;
-    
+.contenedor3 {
+  border: 1px solid rgba(0, 0, 0, 0.185);
+}
+.contenedor2 {
+  width: 50%;
 }
 
-.info{
-    display: flex;
-    height: 100%;
-    flex-direction: column;
-    justify-content: space-between;
-    padding: 30px;
+.info {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 30px;
 }
-.info div p{
-    font-size: 20px;
-    text-align: justify;
+.infocontainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 70%;
 }
-.info div {
-    padding: 20px;
+.info div p {
+  font-size: 20px;
+  text-align: justify;
+}
+
+.container-tarjetas {
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 200px;
+}
+.container-tarjetas h2 {
+  background-color: rgba(195, 0, 255, 0.082);
+  font-size: 15px;
+  text-align: left;
+  padding: 5px;
+  height: 45px;
+  width: 100%;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.151);
+}
+.info-tarjetas {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 265px;
+}
+
+.tarjetas {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+}
+.tarjetas img {
+  margin: 5px;
+  margin-top: 15px;
+  height: 20px;
+  width: 35px;
+}
+.cuotas {
+  display: flex;
+  flex-direction: column;
+  align-self: start;
+}
+.cuotas h3 {
+  font-size: 15px;
+  font-weight: 150;
+}
+
+.text-tarjetas {
+  width: 100%;
+  border-top: 1px solid rgba(0, 0, 0, 0.15);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.text-tarjetas h4 {
+  font-size: 15px;
+  font-weight: 150;
+  height: 35px;
 }
