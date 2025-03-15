@@ -1,5 +1,3 @@
-¡Claro! Aquí tienes el contenido en formato `README.md` listo para GitHub:
-
 ````markdown
 # **Eccove's Shoes - Ecommerce de Zapatillas Urbanas y Deportivas**
 
