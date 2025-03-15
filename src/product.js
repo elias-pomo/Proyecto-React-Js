@@ -1,21 +1,21 @@
 export const products = [
-    {
-        id: "1",
-        marca: "Adidas",
-        title: "Zapatillas adidas Grand Court Alpha",
-        price: 129.999,
-        stock: 15,
-        Genero: "Hombre",
-        descriptionTitle: "ZAPATILLAS VERSÁTILES CON EL INCONFUNDIBLE ADN DE ADIDAS",
-        description: "Diseño clásico con un toque moderno, las adidas Grand Court Alpha son la combinación perfecta de estilo y funcionalidad. Estas zapatillas, elegantes y deportivas, se adaptan fácilmente a cualquier look, asegurando comodidad durante todo el día.",
-        imageUrl: "https://res.cloudinary.com/djcguwdgr/image/upload/v1739027967/Proyecto-Reacts/Zapatillas/wyebrdjcmjluvwcj5srs.webp",
-        img1:"https://res.cloudinary.com/djcguwdgr/image/upload/v1739027970/Proyecto-Reacts/Zapatillas/whycijog0bhd3lmloi1u.webp",
-        img2:"https://res.cloudinary.com/djcguwdgr/image/upload/v1739027968/Proyecto-Reacts/Zapatillas/unkk14zkqajvc5g1nkgz.webp",
-        img3:"https://res.cloudinary.com/djcguwdgr/image/upload/v1739027970/Proyecto-Reacts/Zapatillas/pdxdthel0jq5hytqnuxn.webp",
+    // {
+    //     id: "1",
+    //     marca: "Adidas",
+    //     title: "Zapatillas adidas Grand Court Alpha",
+    //     price: 129.999,
+    //     stock: 15,
+    //     Genero: "Hombre",
+    //     descriptionTitle: "ZAPATILLAS VERSÁTILES CON EL INCONFUNDIBLE ADN DE ADIDAS",
+    //     description: "Diseño clásico con un toque moderno, las adidas Grand Court Alpha son la combinación perfecta de estilo y funcionalidad. Estas zapatillas, elegantes y deportivas, se adaptan fácilmente a cualquier look, asegurando comodidad durante todo el día.",
+    //     imageUrl: "https://res.cloudinary.com/djcguwdgr/image/upload/v1739027967/Proyecto-Reacts/Zapatillas/wyebrdjcmjluvwcj5srs.webp",
+    //     img1:"https://res.cloudinary.com/djcguwdgr/image/upload/v1739027970/Proyecto-Reacts/Zapatillas/whycijog0bhd3lmloi1u.webp",
+    //     img2:"https://res.cloudinary.com/djcguwdgr/image/upload/v1739027968/Proyecto-Reacts/Zapatillas/unkk14zkqajvc5g1nkgz.webp",
+    //     img3:"https://res.cloudinary.com/djcguwdgr/image/upload/v1739027970/Proyecto-Reacts/Zapatillas/pdxdthel0jq5hytqnuxn.webp",
         
-    },
+    // },
     {
-        id: "2",
+        //id: "2",
         marca:"Adidas",
         title: "Zapatillas adidas X_ Plrboost",
         price: 195.999,
@@ -29,7 +29,7 @@ export const products = [
         img3:"https://res.cloudinary.com/djcguwdgr/image/upload/v1739027954/Proyecto-Reacts/Zapatillas/gghhhxskguw6zmuppb1u.webp",
     },
     {
-        id: "3",
+        //id: "3",
         marca:"Adidas",
         title: "Zapatillas adidas VL Court 3.0",
         price: 129.999,
@@ -43,7 +43,7 @@ export const products = [
         img3:"https://res.cloudinary.com/djcguwdgr/image/upload/v1739027954/Proyecto-Reacts/Zapatillas/qkzibqho4phfd8z7rjzg.webp",
     },
     {
-        id: "4",
+        //id: "4",
         marca:"Adidas",
         title: "Zapatillas adidas Midcity Low",
         price: 159.999,
@@ -57,7 +57,7 @@ export const products = [
         img3:"https://res.cloudinary.com/djcguwdgr/image/upload/v1739027971/Proyecto-Reacts/Zapatillas/joq1jzpszignhapuknpi.webp",
     },
     {
-        id: "5",
+       // id: "5",
         marca: "Adidas",
         title: "Zapatillas adidas Forum Mid",
         price: 129.999,
@@ -71,7 +71,7 @@ export const products = [
         img3:"https://res.cloudinary.com/djcguwdgr/image/upload/v1739027967/Proyecto-Reacts/Zapatillas/vlaok3pexqo2deye52dh.webp",
     },
     {
-        id: "6",
+        //id: "6",
         marca: "Nike",
         title: "Zapatillas Nike Air Force 1 ",
         price: 229.999,
@@ -86,7 +86,7 @@ export const products = [
         
     },
     {
-        id: "7",
+        //id: "7",
         marca: "Nike",
         title: "Zapatillas Nike Dunk Low Retro",
         price: 229.999,
@@ -100,7 +100,7 @@ export const products = [
         img3:"https://res.cloudinary.com/djcguwdgr/image/upload/v1739027955/Proyecto-Reacts/Zapatillas/di2iipyzg3yl4k9aednm.webp",
     },
     {
-        id: "8",
+        //id: "8",
         marca: "Nike",
         title: "Zapatillas Nike TC 7900",
         price: 239.999,
@@ -114,7 +114,7 @@ export const products = [
         img3:"https://res.cloudinary.com/djcguwdgr/image/upload/v1739027956/Proyecto-Reacts/Zapatillas/pfpskvl9zxnspeckd4ew.webp",
     },
     {
-        id: "9",
+        //id: "9",
         marca: "Nike",
         title: "Zapatillas Nike Air Max 90",
         price: 259.999,
@@ -128,7 +128,7 @@ export const products = [
         img3:"https://res.cloudinary.com/djcguwdgr/image/upload/v1739027961/Proyecto-Reacts/Zapatillas/qnterrtlo5yi7zi8a3pp.webp",
     },
     {
-        id: "10",
+        //id: "10",
         marca: "Nike",
         title: "Zapatillas Nike Air Force 1 Low Retro",
         price: 309.999,
@@ -142,7 +142,7 @@ export const products = [
         img3:"https://res.cloudinary.com/djcguwdgr/image/upload/v1739027954/Proyecto-Reacts/Zapatillas/jzuqi4lakap69kaacqpq.webp",
     },
     {
-        id: "11",
+       // id: "11",
         marca: "Fila",
         title: "Zapatillas Fila Uproot",
         price: 149.899,
@@ -156,7 +156,7 @@ export const products = [
         img3:"https://res.cloudinary.com/djcguwdgr/image/upload/v1739027955/Proyecto-Reacts/Zapatillas/dj6sega8rtsrfkfsjigs.webp",
     },
     {
-        id: "12",
+        //id: "12",
         marca: "Reebok",
         title: "Zapatillas Reebok Royal",
         price: 99.999,
@@ -170,7 +170,7 @@ export const products = [
         img3:"https://res.cloudinary.com/djcguwdgr/image/upload/v1739027962/Proyecto-Reacts/Zapatillas/yyed8uza3xudujs7f8td.webp",
     },
     {
-        id: "13",
+       // id: "13",
         marca: "Reebok",
         title: "Zapatillas Reebok Classic Leather",
         price: 79.999,
@@ -184,7 +184,7 @@ export const products = [
         img3:"https://res.cloudinary.com/djcguwdgr/image/upload/v1739027959/Proyecto-Reacts/Zapatillas/x0xhyowq5zdriykzoup3.webp",
     },
     {
-        id: "14",
+      //  id: "14",
         marca: "Vans",
         title: "Zapatillas Vans U SK8-HI",
         price: 138.999,
@@ -198,7 +198,7 @@ export const products = [
         img3:"https://res.cloudinary.com/djcguwdgr/image/upload/v1739027966/Proyecto-Reacts/Zapatillas/jm6ajnfoerrlq7c2qkvk.webp",
     },
     {
-        id: "15",
+      //  id: "15",
         marca: "Vans",
         title: "Zapatillas Vans Filmore Hi",
         price: 145.999,

@@ -1,11 +1,13 @@
 import "./ItemDetail.css";
 import { useEffect, useState } from "react";
-import { products } from "../../../product";
 import { useParams } from "react-router";
 import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid2';
 import IconBreadcrumbs from "../../common/Breadcrumbs/Breadcrumbs";
 import Counter from "../../common/Counter/Counter";
+import Acordeon from "../../common/acordeon/Acordeon";
+import { collection, doc, getDoc } from "firebase/firestore";
+import { db } from "../../../FirebaseConfig";
 
 
 export const ItemDetail = () => {
@@ -15,15 +17,20 @@ export const ItemDetail = () => {
   const [item, setItem] = useState({});
 
   useEffect(() => {
-    let producto = products.find((product) => product.id === id);
-    setItem(producto);
-
+    let productCollection = collection(db, "products");
+    let refDoc = doc(productCollection, id);
+    const getProduct = getDoc(refDoc);
+    getProduct.then((res) => {
+      setItem({ id: res.id, ...res.data() });
+    });
   }, [id]);
+
   let precio1 = item.price / 3;
   let precio2 = item.price / 6;
   let precio3 = item.price / 12;
+
   return (
-    <div>
+    <div className="contenedor-padre-itemdetail">
       <IconBreadcrumbs />
       <Box className="Box" sx={{ flexGrow: 1 }}>
         <Grid className="contenedorPadre" container spacing={2}>
@@ -72,8 +79,8 @@ export const ItemDetail = () => {
           </Grid>
         </Grid>
       </Box>
-      <div>
-        <p>{item.description}</p>
+      <div className="acordeon">
+        <Acordeon />
       </div>
     </div>
   )

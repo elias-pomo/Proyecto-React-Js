@@ -1,0 +1,18 @@
+.comprador {
+  width: 250px;
+  background-color: rgba(52, 253, 2, 0.075);
+}
+.counter {
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: row;
+}
+.counter button {
+  margin-top: 10px;
+}
+.counter h2 {
+  margin: 10px;
+  width: 10%;
+  height: 25px;
+  text-align: center;
+}

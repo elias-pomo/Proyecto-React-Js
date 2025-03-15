@@ -37,45 +37,51 @@ const Cart = () => {
     });
   };
 
+  let envio = total * 0.10;
+
   return (
-    <div>
+    <div className="contenedor-padre-carrito">
       <div>
-        <h1>Carrito</h1>
+        <h1>CARRITO</h1>
       </div>
-      {cart.map((elemento) => {
-        return (
-          <div
-            key={elemento.id}
-            style={{
-              margin: "10px",
-              width: "200px",
-              border: elemento.id === "2" ? "2px solid black" : "2px solid red",
-            }}
-            className={elemento.id === "2" ? "principal" : "secundario"}
-          >
-            <h2>{elemento.title}</h2>
-            <h2>Cantidad: {elemento.quantity}</h2>
-            <h2>Cantidad: {elemento.price}</h2>
-            <Button
-              variant="text"
-              onClick={() => {
-                removeById(elemento.id);
-              }}
-            >
-              Eliminar
+      <div className="contenedor-principal-carrito">
+        <div className="productos-carrito">
+          {cart.map((elemento) => {
+            return (
+              <div key={elemento.id}>
+                <div className="tarjeta-carrito">
+                  <img src={elemento.imageUrl} alt="" />
+                  <div className="info-carrito">
+                    <h2>{elemento.title}</h2>
+                    <h2>Cantidad: {elemento.quantity}</h2>
+                    <h2>Precio: ${elemento.price}</h2>
+                  </div>
+                  <Button variant="text" color="error" onClick={() => { removeById(elemento.id); }}>
+                    Eliminar
+                  </Button>
+                </div>
+              </div>
+            );
+          })}
+        </div>
+        <div className="compra-carrito">
+          <h2>RESUMEN DE COMPRA</h2>
+          <div>
+            <h3>Productos({cart.length})</h3>
+            {cart.length > 0 && <h3>${total}</h3>}
+          </div>
+          <div>
+            <h3>Envio:</h3>
+            <h3>${envio}</h3>
+          </div>
+          <div>
+            <Button variant="outlined" color="error" onClick={resetCartWithAlert}>Vaciar carrito</Button>
+            <Button variant="contained">
+              <Link to="/checkout">finalizar compra</Link>
             </Button>
           </div>
-        );
-      })}
-
-      {cart.length > 0 && <h2>El total a pagar es {total}</h2>}
-
-      <Button variant="outlined" color="error" onClick={resetCartWithAlert}>
-        Vaciar carrito
-      </Button>
-      <Button variant="contained">
-        <Link to="/checkout">finalizar compra</Link>
-      </Button>
+        </div>
+      </div>
     </div>
   );
 };

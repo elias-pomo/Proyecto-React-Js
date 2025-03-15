@@ -14,12 +14,14 @@ const CartContextProvider = ({ children }) => {
       const nuevoArray = cart.map((elemento) => {
 
         if (product.id === elemento.id) {
+          console.log(cart);
           return {
             ...elemento,
             quantity: elemento.quantity + product.quantity,
           };
         } else {
           return elemento;
+
         }
       });
       setCart(nuevoArray);

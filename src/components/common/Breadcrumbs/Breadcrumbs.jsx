@@ -6,8 +6,9 @@ import WhatshotIcon from '@mui/icons-material/Whatshot';
 import GrainIcon from '@mui/icons-material/Grain';
 import { useEffect, useState } from "react";
 import { useParams } from "react-router";
-import { products } from '../../../product';
 import "./Breadcrumbs.css";
+import { collection, doc, getDoc } from 'firebase/firestore';
+import { db } from '../../../FirebaseConfig';
 function handleClick(event) {
   event.preventDefault();
   console.info('You clicked a breadcrumb.');
@@ -20,9 +21,14 @@ export default function IconBreadcrumbs() {
   const [item, setItem] = useState({});
 
   useEffect(() => {
-    let producto = products.find((product) => product.id === id);
-    setItem(producto);
-  }, [id]);
+      let productCollection = collection(db, "products");
+      let refDoc = doc(productCollection, id);
+      const getProduct = getDoc(refDoc);
+      getProduct.then((res) => {
+        setItem({ id: res.id, ...res.data() });
+      });
+    }, [id]);
+
   return (
     <div className='breadcrumbs' role="presentation" onClick={handleClick}>
       <Breadcrumbs aria-label="breadcrumb" >

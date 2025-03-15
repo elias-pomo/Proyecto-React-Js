@@ -1,31 +1,35 @@
-
-.hero{
-    background-image: url(https://res.cloudinary.com/djcguwdgr/image/upload/v1739057157/hero1_uhergq.jpg);
-    display: flex; 
-    flex-direction: column; 
-    align-items: center; 
-    height: 250px;
-    background-size: cover;
-    justify-content: space-between; 
-    border-bottom: 3px double black;
+.main {
+  background: #ffffff;
+  background: linear-gradient(272deg, #ffffff 0%, #0c00ff 350%);
+  background: -webkit-linear-gradient(272deg, #ffffff 0%, #0c00ff 350%);
+  background: -moz-linear-gradient(272deg, #ffffff 0%, #0c00ff 350%);
+}
+.hero {
+  background-image: url(https://res.cloudinary.com/djcguwdgr/image/upload/v1739057157/hero1_uhergq.jpg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 250px;
+  background-size: cover;
+  justify-content: space-between;
+  border-bottom: 3px double black;
 }
 
-.catalogo{
-    display: flex; 
-    flex-direction: column; 
-    align-items: center; 
-    border: 2px solid black; 
-    height: 100%;
-    
+.catalogo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid black;
+  height: 100%;
 }
-.catalogo h2{
-    margin-top: 20px;
-    height: 50px;
+.catalogo h2 {
+  margin-top: 20px;
+  height: 50px;
 }
 
-.catalogo .productos{
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 16px;
-    justify-content: center;
+.catalogo .productos {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 16px;
+  justify-content: center;
 }
