@@ -6,7 +6,6 @@ import Swal from "sweetalert2";
 import { Button } from "@mui/material";
 
 const Cart = () => {
-
   const { resetCart, cart, removeById, getTotalAmount } =
     useContext(CartContext);
 
@@ -21,7 +20,6 @@ const Cart = () => {
       denyButtonColor: "green",
       denyButtonText: `No, dejar como estaba`,
     }).then((result) => {
-      console.log(result);
       if (result.isConfirmed) {
         resetCart();
         Swal.fire({
@@ -37,7 +35,7 @@ const Cart = () => {
     });
   };
 
-  let envio = total * 0.10;
+  let envio = total * 0.1;
 
   return (
     <div className="contenedor-padre-carrito">
@@ -56,7 +54,13 @@ const Cart = () => {
                     <h2>Cantidad: {elemento.quantity}</h2>
                     <h2>Precio: ${elemento.price}</h2>
                   </div>
-                  <Button variant="text" color="error" onClick={() => { removeById(elemento.id); }}>
+                  <Button
+                    variant="text"
+                    color="error"
+                    onClick={() => {
+                      removeById(elemento.id);
+                    }}
+                  >
                     Eliminar
                   </Button>
                 </div>
@@ -75,7 +79,13 @@ const Cart = () => {
             <h3>${envio}</h3>
           </div>
           <div>
-            <Button variant="outlined" color="error" onClick={resetCartWithAlert}>Vaciar carrito</Button>
+            <Button
+              variant="outlined"
+              color="error"
+              onClick={resetCartWithAlert}
+            >
+              Vaciar carrito
+            </Button>
             <Button variant="contained">
               <Link to="/checkout">finalizar compra</Link>
             </Button>

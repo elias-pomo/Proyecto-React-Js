@@ -12,32 +12,25 @@ const CartContextProvider = ({ children }) => {
       // generar un nuevo array, que tenga lo mismo que tenia , pero el producto
       // en cuestion, va cambiar sus cantidades
       const nuevoArray = cart.map((elemento) => {
-
         if (product.id === elemento.id) {
-          console.log(cart);
           return {
             ...elemento,
             quantity: elemento.quantity + product.quantity,
           };
         } else {
           return elemento;
-
         }
       });
       setCart(nuevoArray);
     } else {
       setCart([...cart, product]);
     }
-    console.log(cart);
   };
   const resetCart = () => {
     setCart([]);
   };
 
   const removeById = (id) => {
-    console.log(id);
-    // nuevo array ---> que tenga todos los elementos excepto el de este id
-    // el filter siempre siempre siempre devuelve un array
     const newArray = cart.filter((elemento) => elemento.id !== id);
     setCart(newArray);
   };
